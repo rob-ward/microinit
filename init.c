@@ -4,9 +4,7 @@
 int main(int argc, char *argv[]) {
 	(void)argc;
 	(void) argv;
-	while (1) {
-		printf("Microinit is running\n");
-		sleep(1);
-	}
+	execl("/bin/sh", "sh", NULL);
+	return 0;
 }
 
